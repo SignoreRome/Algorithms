@@ -1,10 +1,20 @@
 package com.company;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Random;
 
 public class Main {
 
     public static void main(String[] args) {
+
+        HashMap<Integer, String> dict = new HashMap<>();
+        dict.put(1, "A");
+
+        for (Map.Entry<Integer, String> entry : dict.entrySet()){
+            System.out.println(entry.getKey()+ " "+ entry.getValue());
+        }
+
         final int N = 10;
         int[] array = new int[N];
         int[] arraySearch = new int[10];
